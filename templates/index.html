@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+    
+</body>
+</html>
+
+    <h1>Content Generation App</h1>
+    <div class="container">
+        <form method="POST" action="/generate">
+            <input type="text" name="input_text">
+            <input type="submit" value="Generate">
+        </form>
+        
+        
+    </div>
+    <div class="output">
+        <h2>Generated Content:</h2>
+        <p id="generated-text"></p>
+    </div>
+    
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
